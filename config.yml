@@ -1,0 +1,19 @@
+base:
+  cache_dir: cache
+  output_dir: output
+
+model:
+  model_name: $MODEL_NAME
+  type: SD # choice: [SD, SDXL]
+  fp16: true
+  lora_mode: dynamic # choice: [dynamic, fixed]
+  lora_usage:
+    # list of lora names matching safetensors in models/LoRA dir
+    # FORMAT: `lora_name: lora_scale` OR `lora_name`
+    # - lora_a: 1.0
+    # - lora_b
+
+api:
+  host: 0.0.0.0
+  port: 7860
+  access_url: localhost:7860

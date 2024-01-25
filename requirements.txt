@@ -1,0 +1,11 @@
+diffusers
+transformers
+xformers
+torch
+matplotlib
+numpy
+omegaconf
+accelerate
+peft
+fastapi
+uvicorn
